@@ -49,4 +49,9 @@ class CardTaskAdapter(private val cardList : List<CardViewItem>)  :
         val cardView: CardView = itemView.findViewById(R.id.todoCVTask)
         val checkBox: CheckBox = itemView.findViewById(R.id.checkBoxTodoTask)
     }
+
+
+    private fun calculate() {
+
+    }
 }
