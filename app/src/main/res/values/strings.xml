@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AndroidMaster</string>
+
+    <!-- IMC APP -->
+    <string name="menu_salud_app">Salud App</string>
+    <string name="menu_imc_app">IMC App</string>
+    <string name="menu_todo_app">Todo App</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="calculate">Calcular</string>
+    <string name="recalculate">Re-Calcular</string>
+    <string name="resultIMC">Tu resultado</string>
+
+    <string name="error">Error</string>
+    <string name="title_low_weight">Bajo Peso</string>
+    <string name="description_low_weight">Estás por debajo de lo óptimo para tu peso y altura.</string>
+    <string name="title_normal_weight">Peso Normal</string>
+    <string name="description_normal_weight">Estás en lo óptimo para tu peso y altura.</string>
+    <string name="title_overweight">Sobrepeso</string>
+    <string name="description_overweight">Estás por encima de lo óptimo para tu peso y altura.</string>
+    <string name="title_obesity">Obesidad</string>
+    <string name="description_obesity">Estás muy por encima de lo óptimo para tu peso y altura.</string>
+
+    <!-- TodoApp -->
+    <string name="todo_app_principal_title">A darle caña</string>
+    <string name="todo_app_subtitle_1">Categorías</string>
+    <string name="todo_app_subtitle_2">Tareas</string>
+    <string name="todo_app_title_cardview_1">Negocios</string>
+    <string name="todo_app_title_cardview_2">Personal</string>
+</resources>
