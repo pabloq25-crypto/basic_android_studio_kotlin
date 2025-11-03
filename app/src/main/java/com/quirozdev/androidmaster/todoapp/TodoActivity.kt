@@ -15,10 +15,19 @@ import com.quirozdev.androidmaster.todoapp.components.CardViewItem
 
 class TodoActivity : AppCompatActivity() {
 
-    private lateinit var cardList: MutableList<CardViewItem>
+    private  var cardList = listOf(
+        TaskCategory.Business,
+        TaskCategory.Personal,
+        TaskCategory.Other,
+        TaskCategory.Other,
+        TaskCategory.Other,
+        TaskCategory.Other,
+        TaskCategory.Other,
+        TaskCategory.Other,
+    )
+
     private lateinit var recyclerView: RecyclerView
     private lateinit var recyclerView2: RecyclerView
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +47,7 @@ class TodoActivity : AppCompatActivity() {
         recyclerView2 = findViewById(R.id.recyclerView2)
     }
 
-    private fun getListCardView(): MutableList<CardViewItem> {
+    /*private fun getListCardView(): MutableList<CardViewItem> {
         val list: MutableList<CardViewItem> = ArrayList()
         list.add(CardViewItem("Negocios", R.color.business_category))
         list.add(CardViewItem("Personal", R.color.personal_category))
@@ -47,12 +56,10 @@ class TodoActivity : AppCompatActivity() {
         list.add(CardViewItem("Otrossssss", R.color.personal_category))
 
         return list
-    }
+    }*/
 
 
     private fun initRecyclerView() {
-        cardList = getListCardView()
-
         // Set LayoutManager
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
         recyclerView.adapter = CardViewAdapter(cardList, recyclerView2)

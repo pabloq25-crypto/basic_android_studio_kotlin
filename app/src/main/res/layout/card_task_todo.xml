@@ -26,8 +26,4 @@
             android:text="epa"
             android:textSize="25sp" />
     </androidx.cardview.widget.CardView>
-
-
-
-
 </LinearLayout>

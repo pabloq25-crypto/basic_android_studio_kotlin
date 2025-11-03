@@ -11,9 +11,10 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.marginTop
 import androidx.recyclerview.widget.RecyclerView
 import com.quirozdev.androidmaster.R
+import com.quirozdev.androidmaster.todoapp.TaskCategory
 import com.quirozdev.androidmaster.todoapp.components.CardViewItem
 
-class CardTaskAdapter(private val cardList : List<CardViewItem>)  :
+class CardTaskAdapter(private val cardList : List<TaskCategory>)  :
     RecyclerView.Adapter<CardTaskAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -22,8 +23,8 @@ class CardTaskAdapter(private val cardList : List<CardViewItem>)  :
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val item = cardList[position]
-
+        holder.render(cardList[position])
+        /*val item = cardList[position]
 
         holder.checkBox.setOnClickListener { view ->
             if(holder.checkBox.isChecked) {
@@ -37,7 +38,7 @@ class CardTaskAdapter(private val cardList : List<CardViewItem>)  :
         holder.checkBox.text = item.title
         holder.checkBox.buttonTintList = ContextCompat.getColorStateList(holder.itemView.context, item.colorRes!!)
         Log.i("CardTaskAdapter", "Bind item: ${item.title}")
-        //holder.checkBox.setButtoT(ContextCompat.getColor(holder.itemView.context, item.colorRes!!))
+        //holder.checkBox.setButtoT(ContextCompat.getColor(holder.itemView.context, item.colorRes!!))*/
     }
 
     override fun getItemCount(): Int {
@@ -48,10 +49,21 @@ class CardTaskAdapter(private val cardList : List<CardViewItem>)  :
     class MyViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val cardView: CardView = itemView.findViewById(R.id.todoCVTask)
         val checkBox: CheckBox = itemView.findViewById(R.id.checkBoxTodoTask)
-    }
 
-
-    private fun calculate() {
-
+        fun render(taskCategory : TaskCategory) {
+            when(taskCategory) {
+                TaskCategory.Business -> {
+                    checkBox.text = "Negocios"
+                }
+                TaskCategory.Other ->    {
+                    checkBox.text = "Otros"
+                }
+                TaskCategory.Personal -> {
+                    checkBox.text = "Personal"
+                }
+                else ->
+                    checkBox.text = "Sin Categoria"
+            }
+        }
     }
 }
