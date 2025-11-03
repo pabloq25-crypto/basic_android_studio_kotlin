@@ -50,7 +50,6 @@ class CardViewAdapter(private var cardList : List<TaskCategory>, private val rec
             setGenderColor(holder)
         }*/
         holder.textView.text = item.title
-        holder.textView.text = item.title
         holder.colorView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, item.colorRes!!))
     }
 
