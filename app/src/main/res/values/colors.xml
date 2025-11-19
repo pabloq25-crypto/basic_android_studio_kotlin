@@ -31,9 +31,12 @@
     <color name="subtitle_text">#959595</color>
     <color name="accent">#E91E63</color>
     <color name="color_title">#FF081A4A</color>
+    <color name="todo_accent">#E91E63</color>
     <color name="color_floating_button_todo">#00BCD4</color>
 
     <color name="business_category">#FF9800</color>
     <color name="personal_category">#00BCD4</color>
     <color name="other_category">#96DE9D</color>
+
+
 </resources>

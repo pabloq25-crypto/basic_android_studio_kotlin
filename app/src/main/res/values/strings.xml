@@ -30,4 +30,10 @@
     <string name="todo_app_subtitle_2">Tareas</string>
     <string name="todo_app_title_cardview_1">Negocios</string>
     <string name="todo_app_title_cardview_2">Personal</string>
+
+    <string name="todo_dialog_add_task">Añade la tarea</string>
+    <string name="todo_dialog_category_business">Negocios</string>
+    <string name="todo_dialog_category_personal">Personal</string>
+    <string name="todo_dialog_category_other">Otros</string>
+    <string name="todo_dialog_add_task_button">Crear tarea</string>
 </resources>

@@ -56,13 +56,15 @@
             android:textColor="@color/background_disabled"
             android:textAllCaps="true"
             android:text="@string/todo_app_subtitle_2"
-            />
+        />
 
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
             android:nestedScrollingEnabled="false"
             android:overScrollMode="never" />
     </LinearLayout>
